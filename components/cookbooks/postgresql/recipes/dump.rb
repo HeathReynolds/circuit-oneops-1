@@ -19,6 +19,7 @@ ruby_block 'dump and send to s3' do
     AWS::S3::Base.establish_connection!(
       :access_key_id     => node.workorder.token.ciAttributes.key,
       :secret_access_key => node.workorder.token.ciAttributes.secret
+      :server => node.workorder.token.ciAttributes.server
     )  
   
     # dump file
