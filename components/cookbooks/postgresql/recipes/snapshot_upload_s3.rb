@@ -6,6 +6,7 @@ Chef::Log.info("connecting to s3...")
 AWS::S3::Base.establish_connection!(
   :access_key_id     => node.workorder.services.s3.ciAttributes.key,
   :secret_access_key => node.workorder.services.s3.ciAttributes.secret
+  :server => node.workorder.services.s3.ciAttributes.server
 )  
 
 
