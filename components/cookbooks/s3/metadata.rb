@@ -31,5 +31,15 @@ attribute 'secret',
     :category => '1.Credentials',
     :order => 2
   }
-
-    
+  
+  attribute 'server',
+  :description => "S3 Object Storage Location",
+  :required => "required",
+  :default => "s3.amazonaws.com",
+  :format => {
+    :help => 'FQDN for S3 Object Storage, only change if leveraging a custom virtual hosted bucket or on-prem S3 compatible oject store.', 
+    :category => '1.Credentials',
+    :order => 3
+  }
+  
+  
