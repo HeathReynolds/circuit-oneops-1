@@ -37,7 +37,7 @@ attribute 'secret',
   :required => "required",
   :default => "s3.amazonaws.com",
   :format => {
-    :help => 'FQDN for S3 Object Storage, only change if leveraging a custom virtual hosted bucket or on-prem S3 compatible oject store.', 
+    :help => 'FQDN for S3 Object Storage, only change if leveraging a custom virtual hosted bucket or on-prem S3 compatible oject storage.', 
     :category => '1.Credentials',
     :order => 3
   }
