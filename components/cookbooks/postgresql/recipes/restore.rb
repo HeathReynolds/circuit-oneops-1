@@ -22,6 +22,7 @@ ruby_block 'restore' do
     ::AWS::S3::Base.establish_connection!(
       :access_key_id     => node.workorder.token.ciAttributes.key,
       :secret_access_key => node.workorder.token.ciAttributes.secret
+      :server => node.workorder.token.ciAttributes.server
     )
 
     bucket = args["bucket"]
