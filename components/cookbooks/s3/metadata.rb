@@ -32,7 +32,7 @@ attribute 'secret',
     :order => 2
   }
   
-  attribute 'server',
+attribute 'server',
   :description => "S3 Object Storage Location",
   :required => "required",
   :default => "s3.amazonaws.com",
